@@ -1,8 +1,16 @@
 
 
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
 .background-styles div {
 
     display: flex;
+
 
 }
 
@@ -19,7 +27,7 @@ body {
 
 }
 
-.background-styles .header-style {
+.header-style {
 
     font-family: Roboto-Bold;
     background-color: #1F2937;
@@ -36,7 +44,7 @@ body {
 
 }
 
-.background-styles .quote-section {
+.quote-section {
 
     background: #E5E7EB;
     flex-basis: 100%;
@@ -52,18 +60,55 @@ body {
 
 }
 
-.background-styles .footer {
+.footer {
 
     background: #1F2937;
     flex-basis: 100%;
     height: 75px;
+
 }
 
 .header-logo {
 
-    background: white;
+    color:#FFFFFF;
+    background: green;
     position: relative;
-    margin: 10px;
+    align-self: flex-start;
+    margin-left: 120px;
+    /*
+    top: 10px;
     left: 80px;
+    */
+
+}
+
+.header-link-one {
+
+    color: #FFFFFF;
+    background: red;;
+    align-self: flex-start;
+    margin-left: 80px;
+    margin-right: 15px;
+
+}
+
+.header-link-two {
+
+    color: #FFFFFF;
+    background-color: blue;
+    position: relative;
+    align-self: flex-start;
+    top: 0px;
+    margin-right: 15px;
+
+}
+
+.header-link-three {
+
+    color: #FFFFFF;
+    background-color: purple;
+    position: relative;
+    align-self: flex-start;
+    top: 0px;
 
 }
