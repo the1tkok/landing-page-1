@@ -1,9 +1,23 @@
 
 
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    outline: solid 1px red;
+}
+
+/* Custom font */
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./fonts/Roboto-Light.ttf);
 }
 
 /* Logo and Navigation (Flex Container) */
@@ -12,37 +26,71 @@ header.main-header{
     display: flex;
     justify-content: space-between;
     background: #1f2937;
-    height: 400px;
+    height: 600px;
     flex-wrap: wrap;
-    align-items: flex-start;
-    flex-basis: 100%;
+    align-items: center;
     align-content: flex-start;
 
 }
 
 
 .main-header .logo {
-    /*margin-left: 200px;*/
-    /*margin-top: 20px;*/
+    flex-basis: 30%;
+    margin-left: 15%;
     color: white;
-    height: 75px;
+    height: auto;
+    font-family: "Roboto-Bold", sans-serif;
+    margin-top: 20px;
 }
 
 /* List */
 
 .nav-list {
-    margin-right: 20px;
+    margin-right: 10%;
+    margin-left: 15%;
     color: white;
-    height: 50px;
+    height: auto;
+    margin-top: 20px;
+    width: 400px;
 }
 
 /* List items */
 
 .nav-list li {
+    
+    margin-right: 5%;
+    font-family: "Roboto-Light", sans-serif;
     display: inline-block;
-    margin-right: 10px;
 }
+
+/* Intro Title */
+
+.intro-title {
+    
+    color: white;
+    margin-left: 15%;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 50px;
+    margin-top: 150px;
+    max-width: 400px;
+
+}
+
+/* Intro Description */
+
+.intro-description {
+
+    color: white;
+    font-family: "Roboto-Light", sans-serif;
+    flex-basis: 100%;
+    margin-left: 15%;
+    margin-right: 64%;
+
+}
+
+/* anchor tag */
 
 a {
     color: white;
 }
+
