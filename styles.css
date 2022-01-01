@@ -1,114 +1,48 @@
 
 
 * {
-
     margin: 0;
     padding: 0;
-
+    text-decoration: none;
 }
 
-.background-styles div {
+/* Logo and Navigation (Flex Container) */
 
+header.main-header{
     display: flex;
+    justify-content: space-between;
+    background: #1f2937;
+    height: 400px;
     flex-wrap: wrap;
-
-}
-
-
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(Roboto-Bold.ttf);
-}
-
-body {
-
-    margin: 0;
-    padding: 0;
-
-}
-
-.header-style {
-
-    font-family: Roboto-Bold;
-    background-color: #1F2937;
+    align-items: flex-start;
     flex-basis: 100%;
-    height: 400px;
+    align-content: flex-start;
 
 }
 
-.background-styles .product-features {
 
-    background: #FFFFFF;
-    flex-basis: 100%;
-    height: 400px;
-
-}
-
-.quote-section {
-
-    background: #E5E7EB;
-    flex-basis: 100%;
-    height: 300px;
-
-}
-
-.background-styles .call-to-action {
-
-    background: #FFFFFF;
-    flex-basis: 100%;
-    height: 200px;
-
-}
-
-.footer {
-
-    background: #1F2937;
-    flex-basis: 100%;
+.main-header .logo {
+    /*margin-left: 200px;*/
+    /*margin-top: 20px;*/
+    color: white;
     height: 75px;
-
 }
 
-.header-logo {
+/* List */
 
-    color:#FFFFFF;
-    background: green;
-    position: relative;
-    align-self: flex-start;
-    margin-left: 120px;
-    /*
-    top: 10px;
-    left: 80px;
-    */
-
+.nav-list {
+    margin-right: 20px;
+    color: white;
+    height: 50px;
 }
 
-.header-link-one {
+/* List items */
 
-    color: #FFFFFF;
-    background: red;;
-    align-self: flex-start;
-    margin-left: 500px;
-    margin-right: 15px;
-
+.nav-list li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
-.header-link-two {
-
-    color: #FFFFFF;
-    background-color: blue;
-    position: relative;
-    align-self: flex-start;
-    top: 0px;
-    margin-right: 15px;
-
-}
-
-.header-link-three {
-
-    color: #FFFFFF;
-    background-color: purple;
-    position: relative;
-    align-self: flex-start;
-    top: 0px;
-
+a {
+    color: white;
 }
