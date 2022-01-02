@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    /*outline: solid 1px red;*/
+    outline: solid 1px red;
 }
 
 /* Custom font */
@@ -72,7 +72,6 @@ header.main-header{
     height: auto;
     margin-top: 20px;
     flex-basis: 400px;
-    flex-shrink: 0;
 }
 
 /* List items */
@@ -93,22 +92,26 @@ header.main-header{
 
 .intro {
     display: inline-flex;
-    flex-basis: 31%;
+    flex-basis: 21%;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 15%;
+    margin-top: 10%;
 }
 
 /* Intro Title */
 
 .intro-title {
     
+    display: flex;
     color: white;
     /*margin-left: 15%;*/
     font-family: "Roboto-Bold", sans-serif;
     font-size: 50px;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     /*flex-basis: 100%;*/
+    margin-top: 10%;
+    flex-shrink: 0%;
 
 }
 
@@ -116,11 +119,12 @@ header.main-header{
 
 .intro-description {
 
+    display: flex;
     color: white;
     font-family: "Roboto-Light", sans-serif;
-    /*margin-left: 15%;*/
-    flex-basis: 100%;
+    flex-basis: auto;
     /*margin-right: 64%;*/
+    flex-shrink: 0%;
 
 }
 
@@ -130,3 +134,15 @@ a {
     color: white;
 }
 
+.image-placeholder {
+
+    display: flex;
+    height: 250px;
+    width: 500px;
+    background: gray;
+    margin-right: 15%;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+
+}
