@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    outline: solid 1px red;
+    /*outline: solid 1px red;*/
 }
 
 /* Custom font */
@@ -71,7 +71,7 @@ header.main-header{
     color: white;
     height: auto;
     margin-top: 20px;
-    flex-basis: 400px;
+    flex-basis: 21%;
 }
 
 /* List items */
@@ -111,7 +111,6 @@ header.main-header{
     /*margin-top: 150px;*/
     /*flex-basis: 100%;*/
     margin-top: 10%;
-    flex-shrink: 0%;
 
 }
 
@@ -124,7 +123,6 @@ header.main-header{
     font-family: "Roboto-Light", sans-serif;
     flex-basis: auto;
     /*margin-right: 64%;*/
-    flex-shrink: 0%;
 
 }
 
