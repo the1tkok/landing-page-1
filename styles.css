@@ -29,7 +29,7 @@ body {
 }
 
 html, body {
-    height: 100%;
+    height: auto;
     flex: 0 0 100%;
     background: #1f2937;
 }
@@ -95,6 +95,7 @@ header.main-header{
     flex-basis: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-top: 10%;
 }
 
 /* Intro */
@@ -158,14 +159,14 @@ a {
 }
 */
 
-@media (min-width: 601px) {
+@media (min-width: 537px) {
     .image-placeholder {
         min-width: 537px;
     }
 }
 
 
-@media (max-width: 601px) {
+@media (max-width: 537px) {
     .image-placeholder {
         flex-basis: 100%;
     }
@@ -190,6 +191,13 @@ a {
 @media (max-width: 930px) {
     .nav-list {
         width: 375px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .nav-list {
+        width: 360px;
     }
 
 }
