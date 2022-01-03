@@ -6,7 +6,7 @@
     padding: 0;
     text-decoration: none;
     box-sizing:border-box;
-    outline: solid 1px red;
+    /*outline: solid 1px red;*/
 }
 
 /* Custom font */
@@ -150,7 +150,13 @@ a {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    .image-placeholder {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 800px) {
     .image-placeholder {
         flex-basis: 100%;
     }
@@ -174,6 +180,23 @@ a {
 @media (max-width: 600px) {
     .nav-list {
         width: 375px;
+    }
+
+}
+
+@media (max-width: 600px){
+    .intro-title {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .intro-description {
+        margin-bottom: 20px;
+        text-align: center;
     }
 
 }
