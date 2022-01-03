@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    /*outline: solid 1px red;*/
+    box-sizing:border-box;
+    outline: solid 1px red;
 }
 
 /* Custom font */
@@ -35,15 +36,12 @@ html, body {
 
 header.main-header{
     
-    justify-content: space-between;
+    justify-content: space-around;
     /*background: #1f2937;*/
-    height: 100%;
     flex-wrap: wrap;
-    align-items: center;
     align-content: flex-start;
     flex-basis: 100%;
     display: flex;
-    flex-direction: row;
 
 }
 
@@ -51,13 +49,12 @@ header.main-header{
     display: flex;
     flex-basis: 100%;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .main-header .logo {
     flex-basis: auto;
-    margin-left: 15%;
     color: white;
     height: auto;
     font-family: "Roboto-Bold", sans-serif;
@@ -67,19 +64,21 @@ header.main-header{
 /* List */
 
 .nav-list {
-    margin-right: 15%;
+
+    display: flex;
+    justify-content: space-evenly;
     color: white;
     height: auto;
     margin-top: 20px;
     width: 400px;
     flex-shrink: 0;
+    list-style-type: none;
 }
 
 /* List items */
 
 .nav-list li {
     
-    margin-left: 5%;
     font-family: "Roboto-Light", sans-serif;
     display: inline-block;
     align-self: flex-end;
@@ -89,15 +88,23 @@ header.main-header{
     align-self: flex-end;
 }
 
+/* content-container */
+
+.content-container {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 /* Intro */
 
 .intro {
     display: inline-flex;
-    flex-basis: 21%;
+    flex-basis: auto;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 15%;
-    margin-top: 10%;
+    flex-direction: column;
+    max-width: 400px;
 }
 
 /* Intro Title */
@@ -111,7 +118,6 @@ header.main-header{
     font-size: 50px;
     /*margin-top: 150px;*/
     /*flex-basis: 100%;*/
-    margin-top: 10%;
 
 }
 
@@ -136,12 +142,38 @@ a {
 .image-placeholder {
 
     display: flex;
-    height: 250px;
-    width: 500px;
+    height: 275px;
+    flex-basis: 28%;
     background: gray;
-    margin-right: 15%;
-    margin-top: 10%;
     justify-content: center;
     align-items: center;
+
+}
+
+@media (max-width: 600px) {
+    .image-placeholder {
+        flex-basis: 100%;
+    }
+}
+
+/*
+@media (max-width: 600px) {
+    .intro {
+        margin-top: 
+    }
+
+}*/
+
+@media (max-width: 600px) {
+    .content-container {
+        margin-bottom: 200px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        width: 375px;
+    }
 
 }
