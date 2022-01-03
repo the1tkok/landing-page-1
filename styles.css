@@ -154,7 +154,23 @@ a {
     background: gray;
     justify-content: center;
     align-items: center;
+    font-family: "Roboto-Light", sans-serif;
+    color: white;
 
+}
+
+.sign-up {
+    display: flex;
+    background-color: #3882F6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 30%;
+    height: 35px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*
@@ -212,8 +228,16 @@ a {
 
 @media (max-width: 930px) {
     .intro-description {
-        margin-bottom: 20px;
         text-align: center;
+    }
+
+}
+
+@media (max-width: 930px) {
+
+    .sign-up {
+        align-self: center;
+        margin-bottom: 20px;
     }
 
 }
