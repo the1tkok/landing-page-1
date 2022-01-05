@@ -348,13 +348,15 @@ a {
     padding: 50px 0px 50px 0px;
 }
 
+
+
 /*
 @media (max-width: 800px) {
     .image-placeholder {
         flex-basis: 100%;
     }
 }
-*/
+
 
 @media (min-width: 537px) {
     .image-placeholder {
@@ -376,7 +378,7 @@ a {
         margin-top: 
     }
 
-}*/
+}
 
 @media (max-width: 930px) {
     .nav-list {
@@ -416,3 +418,5 @@ a {
     }
 
 }
+
+*/
